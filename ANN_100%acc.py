@@ -23,7 +23,7 @@ X = scaler.fit_transform(X)
 #y_ = Y / Y.max(axis=0)
 # Spliting data for training and testing purpose
 from sklearn.model_selection import train_test_split
-X_train,X_test, y_train, y_test = train_test_split(X,Y,test_size=0.3)
+X_train,X_test, y_train, y_test = train_test_split(X,Y,test_size=0.01)
 
 # Creating model
 input_nodes = X_train.shape[1]
